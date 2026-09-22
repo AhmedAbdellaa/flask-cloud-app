@@ -29,7 +29,7 @@ pipeline {
         }
         stage('run') {
             steps {
-                echo 'hit localhost:50000 to enter the web page'
+                echo 'hit http://localhost:5000 to enter the web page'
             }
         }
     }
