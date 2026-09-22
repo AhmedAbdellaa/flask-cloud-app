@@ -6,13 +6,6 @@ pipeline {
     }
     
     stages {
-        stage('checkout') {
-            steps {
-                git credentialsId: 'CI-CD', 
-                poll: false, 
-                url: 'https://github.com/AhmedAbdellaa/flask-cloud-app.git'
-            }
-        }
         stage('build') {
             steps {
                 sh 'docker build -t "$IMAGE:$TAG" -t "$IMAGE:latest" .'
