@@ -56,3 +56,4 @@ post {
     failure{echo "Build ${env.BUILD_NUMBER} failed"}
     alwys{echo "Build ${env.BUILD_NUMBER} finished"}
 }
+}
