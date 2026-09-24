@@ -51,7 +51,6 @@ pipeline {
       }
     }
     }
-}
 post {
     success {echo "Build ${env.BUILD_NUMBER} succeeded"}
     failure{echo "Build ${env.BUILD_NUMBER} failed"}
