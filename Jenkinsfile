@@ -54,6 +54,6 @@ pipeline {
 post {
     success {echo "Build ${env.BUILD_NUMBER} succeeded"}
     failure{echo "Build ${env.BUILD_NUMBER} failed"}
-    alwys{echo "Build ${env.BUILD_NUMBER} finished"}
+    always{echo "Build ${env.BUILD_NUMBER} finished"}
 }
 }
